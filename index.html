@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,400" rel="stylesheet">
+    <link rel="stylesheet" href="css/custom.css">
+    <title>Weekly expense</title>
+
+  </head>
+  <body>
+    <div class="container">
+        <header>
+                <h1 class="text-center">Weekly expense</h1>
+        </header>
+        <section class="principal-content">
+            <div class="row">
+                <div class="col ">
+                    <div class="content primario">
+                        <h2 class="text-center">Add your expenses here</h2>
+                            <form id="add-expense" action="#">
+                                <div class="form-group">
+                                    <label for="expense">Expense:</label>
+                                    <input type="text" class="form-control" id="expense" placeholder="Expense Name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="quantity">Quantity:</label>
+                                    <input type="text" class="form-control" id="quantity" placeholder="Quantity in €">
+                                </div>
+
+                                <button type="submit" class="btn btn-primary">Add</button>
+                            </form>
+
+                    </div> <!--.content-->
+                </div> <!--.col-->
+
+                <div class="col">
+                    <div class="content secundario">
+
+                        <h2 class="text-center">List</h2>
+
+                        <div id="expenses">
+                            <ul class="list-group"></ul>
+                        </div>
+                        <div id="budget" class="budget">
+                            <div class="alert alert-primary">
+                                <p>Budget: € <span id="total"></span> </p>
+                            </div>
+                            <div class="rest alert alert-success">
+                                <p>Rest: € <span id="rest"></span></p>
+                            </div>
+                        </div> <!--.budget-->
+                    </div> <!--.content-->
+                </div><!--.col-->
+            </div> <!--.row-->
+        </section>
+    </div>
+
+    
+    <script src="js/app.js" type="module"></script>
+  </body>
+</html>
